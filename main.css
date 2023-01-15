@@ -1,0 +1,228 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Quicksand, sans-serif;
+}
+
+.store{
+    height: fit-content;
+    width: 100%;
+    position: relative;
+    margin-top: 0;
+    margin-left: 16px;
+}
+
+.container h1{
+    max-width: 1024px;
+    width: 100%;
+    margin-left: 16px;
+    color: white;
+}
+
+header > .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    padding: 16px;
+    background-color: rgb(19, 136, 8);
+    margin-bottom: 20px;
+    }
+
+header nav li {
+    display: inline;
+    margin: 16px;
+    font-size: 20px;
+    color: white;
+}
+
+header a {
+    color: white;
+    text-decoration:none;
+}
+
+body .abertura {
+    display: flex;
+}
+
+body .abertura hr {
+    color: rgb(19, 136, 8);
+    background-color: rgb(19, 136, 8);
+    height: 3px;
+    margin-bottom: 16px;
+    margin-right: 8px;
+}
+
+body .abertura h2{
+    margin-top: 16px;
+    margin-left: 0;
+
+}
+
+body .store {
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    max-width:600px;
+    max-height:400px;
+}
+
+.tema h2 {
+    margin-left: 16px;
+    margin-bottom: 16px;
+    margin-top: 32px;
+}
+.conteudo {
+    display: grid;
+    grid-template-columns: repeat(4, 24.25%);
+    column-gap: 1%;
+    margin-right: 16px;
+}
+
+#produtos img {
+    width: 100%;
+}
+
+body .tema hr {
+    color: rgb(19, 136, 8);
+    background-color: rgb(19, 136, 8);
+    height: 3px;
+    margin-bottom: 16px;
+    margin-right: 8px;
+    margin-left: 16px;
+}
+
+.produtos-destaques {
+    margin-left: 16px;
+}
+
+.produtos-destaques h3{
+    margin-top: 8px;
+    font-size: 16px;
+    margin-bottom: 4px;
+    font-weight: bolder;
+}
+.produtos-destaques p{
+    font-size: 14px;
+    font-style: italic;
+    margin-bottom: 4px;
+}
+.produtos-destaques button{
+    width: 150px;
+    height: 20px;
+    margin-top: 4px;
+    background-color: rgb(19, 136, 8);
+    color: white;
+    border-color:transparent;
+    font-size: 12px;
+    margin-bottom: 16px;
+}
+
+@media screen and (max-width: 767px){
+    .container h1{
+        width: 100%;
+        margin-bottom: 8px;
+    }
+    header > .container{
+        display: inline-block;
+    }
+    header {
+        padding: 16px;
+        margin-bottom: 20px;
+        width: 100%px;
+        }
+    header nav li {
+        display: inline;
+        margin: 16px;
+        font-size: 20px;
+    }
+    body .abertura {
+        display: block;
+    }
+    .store{
+        width: 90%;
+        position: flex;
+        margin-top: 0px;
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-bottom: 0px;
+    }
+    #aboutstore {
+        align-items: stretch;
+        flex-direction: row;
+        width: 100%;
+        margin-left: 0;
+    }
+    #aboutstore h2{
+        font-size: 18px;
+        margin-left: 16px;
+    }
+    #aboutstore hr, article{
+        width: 90%;
+        margin-left: 16px;
+        margin-right: 22px;
+    }
+    .conteudo {
+        display: block;
+        margin-right: 0px;
+    }
+    .tema h2 {
+        margin-left: 16px;
+        margin-bottom: 0px;
+        margin-top: 16px;
+        font-size: 18px;
+    }
+
+    .tema hr {
+        width: 90%;
+        margin-left: 16px;
+        margin-right: 22px;
+    }
+
+    #produtos img {
+        width: 100%;
+    }
+    }
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .container {
+        max-width: 90%;
+    }
+    .container h1{
+        margin-bottom: 8px;
+    }
+    header > .container{
+        display: block;
+    }
+
+    .conteudo {
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 48.5%);
+        column-gap: 1%;
+        align-items: center;
+    }
+    
+    #produtos img {
+        width: 100%;
+    }
+
+    .produtos-destaques {
+        margin-bottom: 8px;
+    }
+
+    body .tema hr {
+        margin-bottom: 16px;
+        margin-right: 8px;
+        margin-left: 16px;
+    }
+    .tema h2 {
+        margin-bottom: 0px;
+    }
+}
+
+
+
